@@ -1,5 +1,9 @@
+label { float: left; width: 16em; text-align: right; margin-right: 10px; }
+
+#submitDiv { text-align:center; }
+
 body{
-	background-image: url(1780988-1680x1050-%5BDesktopNexus.com%5D.jpg);
+	background-image: url(css/1780988-1680x1050-%5BDesktopNexus.com%5D.jpg);
 
 }
 
@@ -58,7 +62,7 @@ body{
 	float: left;
 	font-size: 120%;
 	border: medium solid #000000;
-	background-image: url(url);
+	background-image: url(css/url);
 }
 
 
