@@ -1,4 +1,5 @@
 body{
+	background-image: url(1780988-1680x1050-%5BDesktopNexus.com%5D.jpg);
 
 }
 
@@ -12,6 +13,7 @@ body{
 }
 
 .content{
+	background-color: #FFFFFF;
 
 }
 
@@ -56,6 +58,7 @@ body{
 	float: left;
 	font-size: 120%;
 	border: medium solid #000000;
+	background-image: url(url);
 }
 
 
@@ -64,7 +67,7 @@ body{
 }
 
 
-.nav ul {
+body #nav ul {
 	font-size: 100%;
 	list-style-type: none;
 	margin: 0;
@@ -81,14 +84,14 @@ body{
 }
 
 
-.nav ul li {
+body #nav ul li {
 	float: right;
 	padding-left: 0%;
 	padding-right: 3%;
 }
 
 
-.nav ul li a {
+body #nav ul li a {
 	display: block;
 	text-align: center;
 	padding: 0% 0%;
