@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contact Us</title>
+<link rel="stylesheet" href="formstyles.css">
+</head>
+
+<body>
+<h1>Contact Us</h1>
+
+<p>Have a Question or an Idea you want to share with us? Fill out the Form Below.</p>
+
+<h2>Become a Member or Player</h2>
+<p>Interested in becoming a member of, or a player in, the Orchestra?</p>
+
+<h2>Sponsor or Donate to the Orchestra</h2>
+<p>The North Queensland Ensembles Inc is a tax deductible fund listed on the Register of Cultural Organisations under Subdivision 30-B of the Income tax Assessment Act 1997. Donations of $2.00 or more are tax deductible. </p>
+
+<form action="submitThanks.html" name="contactForm" id="contactForm" onSubmit="return checkContactForm();">
+
+<label for="name">Your Name*: &nbsp;</label>
+<input type="text" name="name" id="name" size="40" ><br/><br/>
+
+<label for="email">Your Email*: &nbsp;</label>
+<input type="text" name="email" id="email" size="40"><br/><br/>
+
+<label for="phoneNumber">Your Phone Number: &nbsp;</label>
+<input type="text" name="phoneNumber" id="phoneNumber" size="40"><br/><br/>
+
+<label for="comments">Your Comments*: &nbsp;</label>
+<textarea name="comments" id="comments" cols="60" rows="6">
+</textarea><br/><br/>
+
+<div id="submitDiv">
+<input type="submit" value="Submit"/>
+<input type="reset" value="Reset" name="Reset" id="Reset" onClick="return resetForm()"/>
+</div>
+
+</form>
+
+<h3>Call to Action Here!</h3>
+
+<h2>North Queensland Ensembles Inc.</h2>
+<p>PO Box: 576, Townsville  4810 <br/>
+Phone: 07 4722 2789 <br/>
+E-mail: brotownsville@gmail.com <br/>
+A.B.N. 73 365 249 138 <br/><br/>
+</p>
+
+<script src="formScript.js"></script>
+
+</body>
+</html>
