@@ -1,136 +1,181 @@
-<!doctype html>
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Gallery</title>
-    <link href="mainstyle.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <link href="bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="barrierReefOrchestra.css" rel="stylesheet" type="text/css">
 </head>
-
-
 <body>
+<div id="fb-root"></div>
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : 'your-app-id',
+            xfbml      : true,
+            version    : 'v2.6'
+        });
+    };
 
-<div id="gallery-page">    
-    
-    	<div class="gallery-image">
-          <a target="_blank" href="images/Hot_Summer_Night_13.jpg">
-            <img src="images/thumb_Hot_Summer_Night_13.jpg" alt="A picture of orchestra members playing their instruments.">
-          </a>
-    	</div>
-    
-    
-        <div class="gallery-image">
-          <a target="_blank" href="images/Hot_Summer_Night_17.jpg">
-            <img src="images/thumb_Hot_Summer_Night_17.jpg" alt="A picture of orchestra members playing their instruments.">
-          </a>
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_GB/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+<div class="row">
+<div class="container">
+    <div class="col-lg-11 header"><h1>This the heading</h1></div>
+</div>
+</div>
+<div class="row">
+    <div class="container">
+        <div class="col-lg-11 nav">
+            <h2>This is where the navbar goes</h2>
         </div>
-    
-    
-        <div class="gallery-image">
-          <a target="_blank" href="images/Hot_Summer_Night_29.jpg">
-            <img src="images/thumb_Hot_Summer_Night_29.jpg" alt="A picture of orchestra members playing their instruments.">
-          </a>
+    </div>
+</div>
+<div class="row">
+    <div class="container">
+        <div class="col-sm-11 mobile_like">
+            <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fnqorchestra%2F&width=127&layout=standard&action=like&show_faces=false&share=true&height=46&appId" width="340" height="30" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
         </div>
-	
-    
-    	<div class="gallery-image">
-          <a target="_blank" href="images/Hot_Summer_Night_66.jpg">
-            <img src="images/thumb_Hot_Summer_Night_66.jpg" alt="A picture of orchestra members playing their instruments.">
-          </a>
-    	</div>
-    
-    
-        <div class="gallery-image">
-          <a target="_blank" href="images/Hot_Summer_Night_87.jpg">
-            <img src="images/thumb_Hot_Summer_Night_87.jpg" alt="A picture of a man playing an instrument">
-          </a>
+    </div>
+</div>
+<div class="row">
+    <div class="container">
+        <div class="col-sm-5 col-md-4 col-lg-3 sidebar">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fnqorchestra%2F&tabs=timeline&width=280&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="280" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
         </div>
-    
-    
-        <div class="gallery-image">
-          <a target="_blank" href="images/Hot_Summer_Night_88.jpg">
-            <img src="images/thumb_Hot_Summer_Night_88.jpg" alt="A picture of orchestra members playing their instruments.">
-          </a>
-        </div>
-	
-	
-        <div class="gallery-image">
-          <a target="_blank" href="images/Hot_Summer_Night_106.jpg">
-            <img src="images/thumb_Hot_Summer_Night_106.jpg" alt="A picture of a woman playing a harp.">
-          </a>
-        </div>
-    
-    
-    	<div class="gallery-image">
-          <a target="_blank" href="images/Hot_Summer_Night_107.jpg">
-            <img src="images/thumb_Hot_Summer_Night_107.jpg" alt="A picture of orchestra members playing their instruments.">
-          </a>
-    	</div>
-    
-    
-        <div class="gallery-image">
-          <a target="_blank" href="images/Hot_Summer_Night_120.jpg">
-            <img src="images/thumb_Hot_Summer_Night_120.jpg" alt="A picture of orchestra members playing their instruments.">
-          </a>
-        </div>
-    
-    
-        <div class="gallery-image">
-          <a target="_blank" href="images/Hot_Summer_Night_128.jpg">
-            <img src="images/thumb_Hot_Summer_Night_128.jpg" alt="A picture of orchestra members playing their instruments.">
-          </a>
-        </div>
-	
-	
-        <div class="gallery-image">
-          <a target="_blank" href="images/Hot_Summer_Night-181.jpg">
-            <img src="images/thumb_Hot_Summer_Night-181.jpg" alt="A picture of orchestra members playing their instruments.">
-          </a>
-        </div>
-    
-    
-    	<div class="gallery-image">
-          <a target="_blank" href="images/Hot_Summer_Night-185.jpg">
-            <img src="images/thumb_Hot_Summer_Night-185.jpg" alt="A picture of orchestra members playing their instruments.">
-          </a>
-    	</div>
-    
-    
-        <div class="gallery-image">
-          <a target="_blank" href="images/Hot_Summer_Night-223.jpg">
-            <img src="images/thumb_Hot_Summer_Night-223.jpg" alt="A picture of a man playing an instrument.">
-          </a>
-        </div>
-    
-    
-        <div class="gallery-image">
-          <a target="_blank" href="images/Hot_Summer_Night-236.jpg">
-            <img src="images/thumb_Hot_Summer_Night-236.jpg" alt="A picture of a woman singing beside a man playing an instrument.">
-          </a>
-        </div>
-	
-	
-        <div class="gallery-image">
-          <a target="_blank" href="images/Hot_Summer_Night-240.jpg">
-            <img src="images/thumb_Hot_Summer_Night-240.jpg" alt="A picture of orchestra members playing their instruments.">
-          </a>
-        </div>
-    
-    
-    	<div class="gallery-image">
-          <a target="_blank" href="images/Hot_Summer_Night-257.jpg">
-            <img src="images/thumb_Hot_Summer_Night-257.jpg" alt="A picture of orchestra members playing their instruments.">
-          </a>
-    	</div>
-    
-    
-        <div class="gallery-image">
-          <a target="_blank" href="images/Hot_Summer_Night-365.jpg">
-            <img src="images/thumb_Hot_Summer_Night-365.jpg" alt="A picture of a woman playing the piano.">
-          </a>
-        </div>
+        <div class="col-sm-6 col-md-7 col-lg-8 content">
+            <div class="gallery-image">
+                <a target="_blank" href="images/Hot_Summer_Night_13.jpg">
+                    <img src="images/thumb_Hot_Summer_Night_13.jpg" alt="A picture of orchestra members playing their instruments.">
+                </a>
+            </div>
 
-</div>		
 
+            <div class="gallery-image">
+                <a target="_blank" href="images/Hot_Summer_Night_17.jpg">
+                    <img src="images/thumb_Hot_Summer_Night_17.jpg" alt="A picture of orchestra members playing their instruments.">
+                </a>
+            </div>
+
+
+            <div class="gallery-image">
+                <a target="_blank" href="images/Hot_Summer_Night_29.jpg">
+                    <img src="images/thumb_Hot_Summer_Night_29.jpg" alt="A picture of orchestra members playing their instruments.">
+                </a>
+            </div>
+
+
+            <div class="gallery-image">
+                <a target="_blank" href="images/Hot_Summer_Night_66.jpg">
+                    <img src="images/thumb_Hot_Summer_Night_66.jpg" alt="A picture of orchestra members playing their instruments.">
+                </a>
+            </div>
+
+
+            <div class="gallery-image">
+                <a target="_blank" href="images/Hot_Summer_Night_87.jpg">
+                    <img src="images/thumb_Hot_Summer_Night_87.jpg" alt="A picture of a man playing an instrument">
+                </a>
+            </div>
+
+
+            <div class="gallery-image">
+                <a target="_blank" href="images/Hot_Summer_Night_88.jpg">
+                    <img src="images/thumb_Hot_Summer_Night_88.jpg" alt="A picture of orchestra members playing their instruments.">
+                </a>
+            </div>
+
+
+            <div class="gallery-image">
+                <a target="_blank" href="images/Hot_Summer_Night_106.jpg">
+                    <img src="images/thumb_Hot_Summer_Night_106.jpg" alt="A picture of a woman playing a harp.">
+                </a>
+            </div>
+
+
+            <div class="gallery-image">
+                <a target="_blank" href="images/Hot_Summer_Night_107.jpg">
+                    <img src="images/thumb_Hot_Summer_Night_107.jpg" alt="A picture of orchestra members playing their instruments.">
+                </a>
+            </div>
+
+
+            <div class="gallery-image">
+                <a target="_blank" href="images/Hot_Summer_Night_120.jpg">
+                    <img src="images/thumb_Hot_Summer_Night_120.jpg" alt="A picture of orchestra members playing their instruments.">
+                </a>
+            </div>
+
+
+            <div class="gallery-image">
+                <a target="_blank" href="images/Hot_Summer_Night_128.jpg">
+                    <img src="images/thumb_Hot_Summer_Night_128.jpg" alt="A picture of orchestra members playing their instruments.">
+                </a>
+            </div>
+
+
+            <div class="gallery-image">
+                <a target="_blank" href="images/Hot_Summer_Night-181.jpg">
+                    <img src="images/thumb_Hot_Summer_Night-181.jpg" alt="A picture of orchestra members playing their instruments.">
+                </a>
+            </div>
+
+
+            <div class="gallery-image">
+                <a target="_blank" href="images/Hot_Summer_Night-185.jpg">
+                    <img src="images/thumb_Hot_Summer_Night-185.jpg" alt="A picture of orchestra members playing their instruments.">
+                </a>
+            </div>
+
+
+            <div class="gallery-image">
+                <a target="_blank" href="images/Hot_Summer_Night-223.jpg">
+                    <img src="images/thumb_Hot_Summer_Night-223.jpg" alt="A picture of a man playing an instrument.">
+                </a>
+            </div>
+
+
+            <div class="gallery-image">
+                <a target="_blank" href="images/Hot_Summer_Night-236.jpg">
+                    <img src="images/thumb_Hot_Summer_Night-236.jpg" alt="A picture of a woman singing beside a man playing an instrument.">
+                </a>
+            </div>
+
+
+            <div class="gallery-image">
+                <a target="_blank" href="images/Hot_Summer_Night-240.jpg">
+                    <img src="images/thumb_Hot_Summer_Night-240.jpg" alt="A picture of orchestra members playing their instruments.">
+                </a>
+            </div>
+
+
+            <div class="gallery-image">
+                <a target="_blank" href="images/Hot_Summer_Night-257.jpg">
+                    <img src="images/thumb_Hot_Summer_Night-257.jpg" alt="A picture of orchestra members playing their instruments.">
+                </a>
+            </div>
+
+
+            <div class="gallery-image">
+                <a target="_blank" href="images/Hot_Summer_Night-365.jpg">
+                    <img src="images/thumb_Hot_Summer_Night-365.jpg" alt="A picture of a woman playing the piano.">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="container">
+        <div class="col-lg-11 footer">
+            <p>And this is the footer</p>
+        </div>
+    </div>
+</div>
 </body>
 </html>

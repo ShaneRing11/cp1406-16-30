@@ -7,27 +7,109 @@
     <link href="barrierReefOrchestra.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+<div id="fb-root"></div>
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : 'your-app-id',
+            xfbml      : true,
+            version    : 'v2.6'
+        });
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_GB/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
 <div class="row">
 <div class="container">
-    <div class="col-md-11 header"><h1>This the heading</h1></div>
+    <div class="col-lg-11 header"><h1>This the heading</h1></div>
 </div>
 </div>
 <div class="row">
     <div class="container">
-        <div class="col-md-11 nav">
+        <div class="col-lg-11 nav">
             <h2>This is where the navbar goes</h2>
         </div>
     </div>
 </div>
 <div class="row">
     <div class="container">
-        <div class="col-md-3 sidebar">
-            <p>Our next concert is</p>
-            <p>Insert facebook feed here</p>
-            <p>Want to make a donation or becoming a member? Join us today!</p>
+        <div class="col-sm-11 mobile_like">
+            <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fnqorchestra%2F&width=127&layout=standard&action=like&show_faces=false&share=true&height=46&appId" width="340" height="30" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
         </div>
-        <div class="col-md-8 content">
-            <h2 id = "2ndheading">About Us</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="container">
+        <div class="col-sm-5 col-md-4 col-lg-3 sidebar">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fnqorchestra%2F&tabs=timeline&width=280&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="280" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        </div>
+        <div class="col-sm-6 col-md-7 col-lg-8 content">
+            <h2>About Us</h2>
+            <p> North Queensland Ensembles Inc. is an Incorporated  Association registered in the State of Queensland. <br>
+                It is also a tax deductible fund listed on the Register of  Cultural Organisations under Subdivision 30-B of the Income tax Assessment Act  1997. It is based in Townsville, North Queensland and Australia.<br>
+            </p>
+            <p>  North Queensland Ensembles Inc. Management Committee  2015-2016<br>
+                <br>
+            </p>
+            <table width="399" border="0" align="center" id = "table">
+                <tbody>
+                <tr>
+                    <td width="143">President:</td>
+                    <td width="240">Andrew Ryder</td>
+                </tr>
+                <tr>
+                    <td>Vice President:</td>
+                    <td>Judy Hunter</td>
+                </tr>
+                <tr>
+                    <td>Secretary:</td>
+                    <td >Lorraine Gray-McConnell</td>
+                </tr>
+                <tr>
+                    <td>Treasurer:</td>
+                    <td>Annette Ellis</td>
+                </tr>
+                <tr>
+                    <td>Committee:</td>
+                    <td>Gai Copeman</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Suzanne Darrigan</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Simon McConnell</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Helen Land</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Marg Naylor</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Ron Piper</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Noel Price</td>
+                </tr>
+                <tr>
+                    <td>Orchestra Manager:</td>
+                    <td>Sallay Frewen-Lord</td>
+                </tr>
+                </tbody>
+            </table>
+            <h2>History of the Orchestra</h2>
             <p>Over a two-year period in the late nineties, Townsville musicians, arts workers and a group of people who had a love for music realised the potential for developing a community-based Orchestra — one that would flourish and become an integral part of the City’s cultural life.</p>
             <p>In 2000 to ‘test’ the viability of establishing an Orchestra a weekend workshop was arranged and musicians were invited to participate under the baton of Richard McIntyre, Senior Lecturer at the Canberra School of Music and the result — the Barrier Reef Orchestra was born.</p>
             <p>During the past few years, the Orchestra has performed with the comedy-duo Scared Weird Little Guys in Score, Townsville City Council’s Last Night of the Proms and A Christmas Carol. In 2003 the Council’s centenary year the Orchestra took part in Encore, as well as playing a major role in the Townsville Civic Theatre’s 25th Anniversary productions of Noye’s Fludde and Carmina Burana.</p>
@@ -105,7 +187,7 @@
 </div>
 <div class="row">
     <div class="container">
-        <div class="col-md-11 footer">
+        <div class="col-lg-11 footer">
             <p>And this is the footer</p>
         </div>
     </div>
