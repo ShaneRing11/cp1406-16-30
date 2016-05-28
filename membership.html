@@ -1,12 +1,76 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Membership Form</title>
-<link rel="stylesheet" href="formstyles.css">
+    <meta charset="UTF-8">
+    <title>Membership</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/barrierReefOrchestra.css" rel="stylesheet" type="text/css">
+    
 </head>
-
 <body>
+
+<div id="nav">
+	<ul>
+     	
+        <span class="bro-logo">
+        <strong>Barrier Reef Orchestra
+        </strong>
+        </span>
+                            
+  				<li>
+                    <a href="people.html"><strong>PEOPLE
+                    </strong></a>
+                </li>
+
+                <li>
+                    <a href="about.html"><strong>ABOUT
+                    </strong></a>
+                </li>
+
+                <li>
+                    <a href="contact.html"><strong>CONTACT
+                    </strong></a>
+                </li>
+
+                <li>
+                    <a href="news.html"><strong>NEWS
+                    </strong></a>
+                </li>
+
+                <li>
+                    <strong>MEMBERSHIP
+                    </strong>
+                </li>
+
+                <li>
+                    <a href="benefactors.html"><strong>SPONSORS
+                    </strong></a>
+                </li>
+
+                <li>
+                    <a href="gallery.html"><strong>GALLERY
+                    </strong></a>
+                </li>
+
+                <li>
+                    <a href="index.html"><strong>HOME
+                    </strong></a>
+                </li>
+                          
+	</ul>
+</div>
+
+<div class="row">
+    <div class="container">
+        <div class="col-sm-11 mobile_like">
+            <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fnqorchestra%2F&width=127&layout=standard&action=like&show_faces=false&share=true&height=46&appId" width="340" height="30" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        </div>
+        <div class="col-lg-11 nav">
+        </div>
+    </div>
+<div class="row">
+<div class="container">
+<div class="col-sm-11 col-md-11 col-lg-11 content">
 <h1>BARRIER REEF ORCHESTRA MEMBERSHIP FORM</h1>
 <h2>North Queensland Ensembles Inc.</h2>
 <p>PO Box 576, Townsville  4810 <br/>
@@ -22,12 +86,12 @@ North Queensland Ensembles Inc. is the administration body of the Barrier Reef O
 </p>
 
 <h3>Membership Application North Queensland Ensembles Inc.</h3>
-<form action="submitThanks.html" name="membershipForm" id="membershipForm" onSubmit="return checkMembershipForm();">
+<form action="submit_thanks.html" name="membershipForm" id="membershipForm" onSubmit="return checkMembershipForm();">
 
-<label for="mebershipApplication">Application type:</label>
+<label for="membershipApplication">Application type:</label>
 <fieldset id="membershipApplication">
 <input name="membershipApp" type="radio" id="newMemberShip" value="newMember"/>
-<label for="newMemberShip">New Membership</label><br/>
+<label for="newMemberShip">New Membership</label><br/><br/>
 <input name="membershipApp" type="radio" id="renewMemberShip" value="renewMember"/>
 <label for="renewMemberShip">Renewal Membership</label>
 </fieldset><br/>
@@ -35,13 +99,13 @@ North Queensland Ensembles Inc. is the administration body of the Barrier Reef O
 <label for="membershipType">Membership Type:</label>
 <fieldset id="membershipType">
 <input name="typeSelected" type="radio" id="typeAdult" value="adult"/>
-<label for="typeAdult">Adult</label><br/>
+<label for="typeAdult">Adult</label><br/><br/>
 <input name="typeSelected" type="radio" id="typeFamily" value="family"/>
-<label for="typeFamily">Family</label><br/>
+<label for="typeFamily">Family</label><br/><br/>
 <input name="typeSelected" type="radio" id="typeStudent" value="student"/>
-<label for="typeStudent">Student</label><br/>
-<input name="typeSelected" type="radio" id="typeConsession" value="concession"/>
-<label for="typeConsession">Consession</label><br/>
+<label for="typeStudent">Student</label><br/><br/>
+<input name="typeSelected" type="radio" id="typeConcession" value="concession"/>
+<label for="typeConcession">Concession</label><br/><br/>
 </fieldset><br/>
 
 <label for="applicantDetails">Applicant Details: <br/></label>
@@ -55,7 +119,7 @@ North Queensland Ensembles Inc. is the administration body of the Barrier Reef O
 </select><br/><br/>
 <label for="familyName">Family Name*: &nbsp;</label>
 <input name="familyName" type="text" id="familyName" size="30"/><br/><br/>
-<label for="givinName">Given Name*: &nbsp;</label>
+<label for="givenName">Given Name*: &nbsp;</label>
 <input name="givenName" type="text" id="givenName" size="30"/><br/>
 </fieldset><br/>
 
@@ -89,22 +153,22 @@ North Queensland Ensembles Inc. is the administration body of the Barrier Reef O
 <input name="eMail" type="email" id="eMail" size="50">
 </fieldset><br/>
 
-<label for="membershipRole:">Membership Role: <br/>How can you help the Orchestra?</label>
+<label for="membershipRole">Membership Role: <br/>How can you help the Orchestra?</label>
 <fieldset id="membershipRole">
 <input name="roleSelection" type="checkbox" id="rolePlayer" value="player">
-<label for="rolePlayer">Playing in the Orchestra or Ensembles.</label><br/>
+<label for="rolePlayer">Play in the Orchestra.</label><br/><br/>
 <input name="roleSelection" type="checkbox" id="roleManagement" value="management">
-<label for="roleManagement">Management / Administration.</label><br/>
+<label for="roleManagement">Management / Administration.</label><br/><br/>
 <input name="roleSelection" type="checkbox" id="roleSupport" value="support">
-<label for="roleSupport">Player Support.</label><br/>
+<label for="roleSupport">Player Support.</label><br/><br/>
 <input name="roleSelection" type="checkbox" id="roleFundraising" value="fundraising">
-<label for="roleFundraising">Fundraising.</label><br/>
+<label for="roleFundraising">Fundraising.</label><br/><br/>
 <input name="roleSelection" type="checkbox" id="rolePromotion" value="promotion">
-<label for="rolePromotion">Marketing / Promotion.</label><br/>
+<label for="rolePromotion">Marketing / Promotion.</label><br/><br/>
 <input name="roleSelection" type="checkbox" id="roleSponsorship" value="sponsership">
-<label for="roleSponsorship">Sponsership.</label><br/>
+<label for="roleSponsorship">Sponsership.</label><br/><br/>
 <input name="roleSelection" type="checkbox" id="roleDesktopPublishing" value="desktopPublishing">
-<label for="roleDesktopPublishing">Desktop Publishing.</label><br/>
+<label for="roleDesktopPublishing">Desktop Publishing.</label><br/><br/>
 </fieldset><br/>
 
 <label for="playerReg">Player Registration: </label>
@@ -123,10 +187,10 @@ Concession available to persons in receipt of Centrelink pension card. Family me
 </p>
 <!--- Rename this section --->
 
-<label for="submit">Payment and Submission: </label>
+<label for="sumbmit">Payment and Submission: </label>
 <fieldset id="sumbmit">
 
-<label for="cardtype">Card Type: &nbsp;</label>
+<label for="cardSelect">Card Type: &nbsp;</label>
 <select name="cardSelect" id="cardSelect">
 <option value="masterCard">MasterCard</option>
 <option value="Visa">Visa</option>
@@ -135,7 +199,7 @@ Concession available to persons in receipt of Centrelink pension card. Family me
 <input type="text" name="cardHolder" id="cardHolder" size="40"><br/><br/>
 <label for="cardNumber">Card Number*: &nbsp;</label>
 <input type="text" name="cardNumber" id="cardNumber" size="20"><br/><br/>
-<label for="vin">CSV Number*: &nbsp;</label>
+<label for="csv">CSV Number*: &nbsp;</label>
 <input type="text" name="CSV" id="CSV" size="6"><br/><br/>
 
 </fieldset><br/>
@@ -146,6 +210,11 @@ Concession available to persons in receipt of Centrelink pension card. Family me
 </div>
 </form>
 
-<script src="formScript.js"></script>
+<script src="js/formScript.js"></script>
+
+        </div>
+    </div>
+</div>
+</div>
 </body>
 </html>

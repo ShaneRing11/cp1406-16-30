@@ -1,23 +1,127 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Contact Us</title>
-<link rel="stylesheet" href="formstyles.css">
-</head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link href="css/barrierReefOrchestra.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
+    
+</head>
 <body>
-<h1>Contact Us</h1>
+<div id="fb-root"></div>
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : 'your-app-id',
+            xfbml      : true,
+            version    : 'v2.6'
+        });
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_GB/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div id="nav">
+	<ul>
+     	
+        <span class="bro-logo">
+        <strong>Barrier Reef Orchestra
+        </strong>
+        </span>
+                            
+  				<li>
+                    <a href="people.html"><strong>PEOPLE
+                    </strong></a>
+                </li>
+
+                <li>
+                    <a href="about.html"><strong>ABOUT
+                    </strong></a>
+                </li>
+
+                <li>
+                    <strong>CONTACT
+                    </strong>
+                </li>
+
+                <li>
+                    <a href="news.html"><strong>NEWS
+                    </strong></a>
+                </li>
+
+                <li>
+                    <a href="membership.html"><strong>MEMBERSHIP
+                    </strong></a>
+                </li>
+
+                <li>
+                    <a href="benefactors.html"><strong>SPONSORS
+                    </strong></a>
+                </li>
+
+                <li>
+                    <a href="gallery.html"><strong>GALLERY
+                    </strong></a>
+                </li>
+
+                <li>
+                    <a href="index.html"><strong>HOME
+                    </strong></a>
+                </li>
+                          
+	</ul>
+</div>
+
+<div class="row">
+    <div class="container">
+        <div class="col-lg-11 nav">
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="container">
+        <div class="col-md-11 nav">
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="container">
+        <div class="col-sm-11 mobile_like">
+            <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fnqorchestra%2F&width=127&layout=standard&action=like&show_faces=false&share=true&height=46&appId" width="340" height="30" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="container">
+        <div class="col-sm-5 col-md-4 col-lg-3 sidebar">
+            <a href="https://whatson.townsville.qld.gov.au/categories/ticketshop"><div class="order_button"><p><strong>Order your tickets today</strong></p></div></a>
+            <p>Come to our next concert</p>
+            <strong>Twilight Classics</strong><br>
+            With conductor Mario Dobering</p>
+            <p>Featuring ACVC 2015 winner <br>Arthur Athan</p>
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fnqorchestra%2F&tabs=timeline&width=280&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="280" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        </div>
+        <div class="col-sm-6 col-md-7 col-lg-8 content">
+            <h1>Contact Us</h1>
 
 <p>Have a Question or an Idea you want to share with us? Fill out the Form Below.</p>
 
-<h2>Become a Member or Player</h2>
+<h1>Become a Member or Player</h1>
 <p>Interested in becoming a member of, or a player in, the Orchestra?</p>
 
 <h2>Sponsor or Donate to the Orchestra</h2>
 <p>The North Queensland Ensembles Inc is a tax deductible fund listed on the Register of Cultural Organisations under Subdivision 30-B of the Income tax Assessment Act 1997. Donations of $2.00 or more are tax deductible. </p>
 
-<form action="submitThanks.html" name="contactForm" id="contactForm" onSubmit="return checkContactForm();">
+<form action="submit_thanks.html" name="contactForm" id="contactForm" onSubmit="return checkContactForm();">
 
 <label for="name">Your Name*: &nbsp;</label>
 <input type="text" name="name" id="name" size="40" ><br/><br/>
@@ -39,7 +143,7 @@
 
 </form>
 
-<h3>Call to Action Here!</h3>
+
 
 <h2>North Queensland Ensembles Inc.</h2>
 <p>PO Box: 576, Townsville  4810 <br/>
@@ -48,7 +152,9 @@ E-mail: brotownsville@gmail.com <br/>
 A.B.N. 73 365 249 138 <br/><br/>
 </p>
 
-<script src="formScript.js"></script>
-
+<script src="js/formScript.js"></script>
+        </div>
+    </div>
+</div>
 </body>
 </html>

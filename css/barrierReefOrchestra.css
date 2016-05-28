@@ -1,28 +1,41 @@
 label { float: left; width: 16em; text-align: right; margin-right: 10px; }
 
+.index_image {
+	padding-bottom: 5px;
+}
+
 #submitDiv { text-align:center; }
 
 body{
-	background-image: url(css/1780988-1680x1050-%5BDesktopNexus.com%5D.jpg);
-
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-color: #043590;
+	background-image: url(../images/background_image.jpg);
 }
 
 .header {
 	text-align: center;
-
 }
+
 
 .sidebar {
-	
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 10px;
 }
+
 
 .content{
-	background-color: #FFFFFF;
-
+	padding-bottom: 10px;
 }
 
-.footer {
+table {
+	text-align: center;
+}
 
+th {
+	padding: 5px;
 }
 
 .nav{
@@ -42,12 +55,22 @@ body{
 	.sidebar {
 		display: none;
 	}
+	.index_image {
+		display: none;
+	}
 }
 
 @media (min-width: 768px) {
 	.mobile_like {
 		display: none;
 	}
+}
+
+.order_button {
+
+	text-align: center;
+	border: solid;
+	background-color: #f7f52f;
 }
 
 .bro-logo {
@@ -62,12 +85,6 @@ body{
 	float: left;
 	font-size: 120%;
 	border: medium solid #000000;
-	background-image: url(css/url);
-}
-
-
-.bro-logo:hover {
-	text-decoration: underline;
 }
 
 
@@ -81,10 +98,11 @@ body #nav ul {
 	top: 0;
 	left: 0%;
 	overflow: hidden;
-	background-color: #A7D2CB;
-	background-repeat: no-repeat;
+	background-color: rgba(5, 147, 239, 1);
+
 	border-bottom: medium solid #000000;
 	display:block;
+	color: #ffffff;
 }
 
 
@@ -109,7 +127,6 @@ ul li a:hover {
 
 a:link {
 	text-decoration: none;
-	text-decoration: underline;
 	color: #000000;
 }
 
@@ -124,3 +141,8 @@ a:active {
 	text-decoration: underline;
 	color: #FFFFFF;
 }
+
+.container {
+	background-color: #FFFFFF;
+}
+
