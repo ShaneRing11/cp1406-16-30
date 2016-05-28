@@ -26,18 +26,18 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 </script>
-<div class="row">
-    <div class="container">
-        <div class="col-lg-11 nav">
-            <ul>
 
+<div id="nav">
+	<ul>
+     	
         <span class="bro-logo">
-        <a href="index.html"><strong>BRO logo goes here
+        <a href="index.html"><strong>Barrier Reef Orchestra
         </strong></a>
         </span>
-
-                <li>
-                    <a href="people.html"><strong>PEOPLE</strong></a>
+                            
+  				<li>
+                    <a href="people.html"><strong>PEOPLE
+                    </strong></a>
                 </li>
 
                 <li>
@@ -69,8 +69,13 @@
                     <a href="gallery.html"><strong>GALLERY
                     </strong></a>
                 </li>
+                          
+	</ul>
+</div>
 
-            </ul>
+<div class="row">
+    <div class="container">
+        <div class="col-lg-11 nav">
         </div>
     </div>
 </div>
@@ -87,30 +92,53 @@
             <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fnqorchestra%2F&tabs=timeline&width=280&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="280" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
         </div>
         <div class="col-sm-6 col-md-7 col-lg-8 content">
-            <h1>Contact Us</h1>
+            <h1>Become a Benefactor</h1>
 
-<p>Have a Question or an Idea you want to share with us? Fill out the Form Below.</p>
+<p>With a philanthric gift of $200 or more (we leave that up to you) you can become an Orchestra Benefactor and be placed on our Benefactor roll for twelve months. This roll will be published in each concert program and on our website for twelve months. As a benefactor you will also recieve two tickets to our next concert, be placed on the mailing list for our newsletter and will be a guest at our annual Season's Launch function.</p>
+<p>Donations are tax deductable. For more information contact Simon McConnell 0418776961, mcconnellgray@optusnet.com.au</p>
 
-<h2>Become a Member or Player</h2>
-<p>Interested in becoming a member of, or a player in, the Orchestra?</p>
+<form action="submit_thanks.html" name="benefactorForm" id="benefactorForm" onSubmit="return checkBenefactorForm();">
 
-<h2>Sponsor or Donate to the Orchestra</h2>
-<p>The North Queensland Ensembles Inc is a tax deductible fund listed on the Register of Cultural Organisations under Subdivision 30-B of the Income tax Assessment Act 1997. Donations of $2.00 or more are tax deductible. </p>
+<label for="applicantDetails">Applicant Details: <br/></label>
+<fieldset id="applicantDetails">
+<label for="titleSelect">Title/s: &nbsp;</label>
+<select name="titleSelect" id="titleSelect">
+<option value="Mr">Mr</option>
+<option value="Mrs">Mrs</option>
+<option value="Ms">Ms</option>
+<option value="Miss">Miss</option>
+</select><br/><br/>
+<label for="fullName">Full Name*: &nbsp;</label>
+<input name="fullName" type="text" id="fullName" size="50"/><br/><br/>
 
-<form action="submit_thanks.html" name="contactForm" id="contactForm" onSubmit="return checkContactForm();">
+<label for="address">Postal Address*: &nbsp;</label>
+<input name="address" type="text" id="address" size="50"/><br/><br/>
+<label for="postcode">&nbsp;Postcode*: &nbsp;</label>
+<input name="postcode" type="text" id="postcode" size="4"><br/><br/>
+<label for="contactNumber">Phone Number: &nbsp;</label>
+<input name="contactNumber" type="tel" id="contactNumber"><br/><br/>
+<label for="eMail">E-mail*: &nbsp;</label>
+<input name="eMail" type="email" id="eMail" size="50"><br/><br/>
+</fieldset><br/><br/>
 
-<label for="name">Your Name*: &nbsp;</label>
-<input type="text" name="name" id="name" size="40" ><br/><br/>
+<label for="submit">Payment and Submission: </label>
+<fieldset id="sumbmit">
 
-<label for="email">Your Email*: &nbsp;</label>
-<input type="text" name="email" id="email" size="40"><br/><br/>
+<label for="cardtype">Card Type: &nbsp;</label>
+<select name="cardSelect" id="cardSelect">
+<option value="masterCard">MasterCard</option>
+<option value="Visa">Visa</option>
+</select><br/><br/>
+<label for="cardHolder">Name of Card Holder*: &nbsp;</label>
+<input type="text" name="cardHolder" id="cardHolder" size="40"><br/><br/>
+<label for="cardNumber">Card Number*: &nbsp;</label>
+<input type="text" name="cardNumber" id="cardNumber" size="20"><br/><br/>
+<label for="CSV">CSV Number*: &nbsp;</label>
+<input type="text" name="CSV" id="CSV" size="6"><br/><br/>
+<label for="donationAmount">Donation Amount*: &nbsp;</label>
+<input type="text" name="donationAmount" id="donationAmount" size="6"><br/><br/>
 
-<label for="phoneNumber">Your Phone Number: &nbsp;</label>
-<input type="text" name="phoneNumber" id="phoneNumber" size="40"><br/><br/>
-
-<label for="comments">Your Comments*: &nbsp;</label>
-<textarea name="comments" id="comments" cols="60" rows="6">
-</textarea><br/><br/>
+</fieldset><br/>
 
 <div id="submitDiv">
 <input type="submit" value="Submit"/>
@@ -118,15 +146,6 @@
 </div>
 
 </form>
-
-<h3>Call to Action Here!</h3>
-
-<h2>North Queensland Ensembles Inc.</h2>
-<p>PO Box: 576, Townsville  4810 <br/>
-Phone: 07 4722 2789 <br/>
-E-mail: brotownsville@gmail.com <br/>
-A.B.N. 73 365 249 138 <br/><br/>
-</p>
 
 <script src="js/formScript.js"></script>
         </div>

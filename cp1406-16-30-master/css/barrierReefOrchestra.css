@@ -3,7 +3,8 @@ label { float: left; width: 16em; text-align: right; margin-right: 10px; }
 #submitDiv { text-align:center; }
 
 body{
-	background-image: url(../images/background_image.jpg)
+	background-image: url(../images/background_image.jpg);
+	background-repeat: no-repeat;
 }
 
 .header {
@@ -125,6 +126,15 @@ a:active {
 	color: #FFFFFF;
 }
 
+
 .container {
 	background-color: #FFFFFF;
 }
+
+
+.cacarousel-example-generic {
+	width: auto;
+	height: 300px;
+	max-height: 300px;
+}
+

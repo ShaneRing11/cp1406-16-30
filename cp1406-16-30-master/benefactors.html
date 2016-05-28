@@ -1,42 +1,134 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Benefactors</title>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/barrierReefOrchestra.css" rel="stylesheet" type="text/css">
+    
 </head>
-
 <body>
 
-<h2>North Queensland Ensembles Inc</h2>
-<h1>BARRIER REEF ORCHESTRA
-BENEFACTORS' ROLL</h1>
+<div id="nav">
+	<ul>
+     	
+        <span class="bro-logo">
+        <a href="index.html"><strong>Barrier Reef Orchestra
+        </strong></a>
+        </span>
+                            
+  				<li>
+                    <a href="people.html"><strong>PEOPLE
+                    </strong></a>
+                </li>
 
-<p>
-<ul>Dr Kevin Arlett</ul>
-<ul>Carol Dall'Osto</ul>
-<ul>Councillor Ray Gartrell</ul>
-<ul>Bruce Gibson and Dorothy Gibson-Wilde O.A.M.</ul>
-<ul>Dr Kerry Gillespie</ul>
-<ul>Peter Honeycombe</ul>
-<ul>Judy Hunter O.A.M.</ul>
-<ul>Ewen Jones MP</ul>
-<ul>David and Janine Kippin</ul>
-<ul>Simon and Lorraine McConnell</ul>
-<ul>Senator Ian McDonald</ul>
-<ul>Janice Mays</ul>
-<ul>Terry O'Toole</ul>
-<ul>Bronia and Neil Renison</ul>
-<ul>Desley Wheeler</ul>
-<ul>Graham Wheeler</ul>
+                <li>
+                    <a href="about.html"><strong>ABOUT
+                    </strong></a>
+                </li>
 
-@ 23 March 2016
-</p>
-<p>
-Become an Orchestra Benefactor and assist Townsville’s Community Orchestra with your personal and publicly acknowledged support which encourages others to do the same.
-</p>
-<a href="benefactorForm.html">Home</a>
+                <li>
+                    <a href="contact.html"><strong>CONTACT
+                    </strong></a>
+                </li>
 
-<h2>Sponsers</h2>
+                <li>
+                    <a href="news.html"><strong>ANNOUNCEMENTS
+                    </strong></a>
+                </li>
 
+                <li>
+                    <a href="membership.html"><strong>MEMBERSHIP
+                    </strong></a>
+                </li>
+
+                <li>
+                    <a href="benefactors.html"><strong>BENEFACTORS
+                    </strong></a>
+                </li>
+
+                <li>
+                    <a href="gallery.html"><strong>GALLERY
+                    </strong></a>
+                </li>
+                          
+	</ul>
+</div>
+
+<div class="row">
+    <div class="container">
+        <div class="col-lg-11 nav">
+        </div>
+    </div>
+<div class="row">
+<div class="container">
+<div class="col-sm-11 col-md-11 col-lg-11 content">
+<h1>Become a Benefactor</h1>
+
+<p>With a philanthric gift of $200 or more (we leave that up to you) you can become an Orchestra Benefactor and be placed on our Benefactor roll for twelve months. This roll will be published in each concert program and on our website for twelve months. As a benefactor you will also recieve two tickets to our next concert, be placed on the mailing list for our newsletter and will be a guest at our annual Season's Launch function.</p>
+<p>Donations are tax deductable. For more information contact Simon McConnell 0418776961, mcconnellgray@optusnet.com.au</p>
+
+<form action="submit_thanks.html" name="benefactorForm" id="benefactorForm" onSubmit="return checkBenefactorForm();">
+
+<label for="applicantDetails">Applicant Details: <br/></label>
+<fieldset id="applicantDetails">
+<label for="titleSelect">Title/s: &nbsp;</label>
+<select name="titleSelect" id="titleSelect">
+<option value="Mr">Mr</option>
+<option value="Mrs">Mrs</option>
+<option value="Ms">Ms</option>
+<option value="Miss">Miss</option>
+</select><br/><br/>
+<label for="fullName">Full Name*: &nbsp;</label>
+<input name="fullName" type="text" id="fullName" size="50"/><br/><br/>
+
+<label for="address">Postal Address*: &nbsp;</label>
+<input name="address" type="text" id="address" size="50"/><br/><br/>
+<label for="postcode">&nbsp;Postcode*: &nbsp;</label>
+<input name="postcode" type="text" id="postcode" size="4"><br/><br/>
+<label for="contactNumber">Phone Number: &nbsp;</label>
+<input name="contactNumber" type="tel" id="contactNumber"><br/><br/>
+<label for="eMail">E-mail*: &nbsp;</label>
+<input name="eMail" type="email" id="eMail" size="50"><br/><br/>
+</fieldset><br/><br/>
+
+<label for="submit">Payment and Submission: </label>
+<fieldset id="sumbmit">
+
+<label for="cardtype">Card Type: &nbsp;</label>
+<select name="cardSelect" id="cardSelect">
+<option value="masterCard">MasterCard</option>
+<option value="Visa">Visa</option>
+</select><br/><br/>
+<label for="cardHolder">Name of Card Holder*: &nbsp;</label>
+<input type="text" name="cardHolder" id="cardHolder" size="40"><br/><br/>
+<label for="cardNumber">Card Number*: &nbsp;</label>
+<input type="text" name="cardNumber" id="cardNumber" size="20"><br/><br/>
+<label for="CSV">CSV Number*: &nbsp;</label>
+<input type="text" name="CSV" id="CSV" size="6"><br/><br/>
+<label for="donationAmount">Donation Amount*: &nbsp;</label>
+<input type="text" name="donationAmount" id="donationAmount" size="6"><br/><br/>
+
+</fieldset><br/>
+
+<div id="submitDiv">
+<input type="submit" value="Submit"/>
+<input type="reset" value="Reset" name="Reset" id="Reset" onClick="return resetForm()"/>
+</div>
+
+</form>
+
+<script src="js/formScript.js"></script>
+
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="container">
+        <div class="col-lg-11 footer">
+            <p>And this is the footer</p>
+        </div>
+    </div>
+</div>
 </body>
 </html>
