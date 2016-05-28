@@ -1,29 +1,39 @@
 label { float: left; width: 16em; text-align: right; margin-right: 10px; }
 
+.index_image {
+	padding-bottom: 5px;
+}
+
 #submitDiv { text-align:center; }
 
 body{
-	background-image: url(../images/background_image.jpg);
-	background-repeat: no-repeat;
+	background-image: url(../images/background_image.jpg)
 }
 
 .header {
 	text-align: center;
-
 }
 
 
 .sidebar {
+	text-align: center;
 	background-color: #FFFFFF;
+	padding-top: 25px;
+	padding-bottom: 10px;
 }
 
 
 .content{
 	background-color: #FFFFFF;
+	padding-bottom: 10px;
 }
 
-.footer {
+table {
+	text-align: center;
+}
 
+th {
+	padding: 5px;
 }
 
 .nav{
@@ -51,6 +61,13 @@ body{
 	}
 }
 
+.order_button {
+
+	text-align: center;
+	border: solid;
+	background-color: #f7f52f;
+}
+
 .bro-logo {
 	margin-left: 3%;
 	margin-top: 0.5%;
@@ -63,12 +80,6 @@ body{
 	float: left;
 	font-size: 120%;
 	border: medium solid #000000;
-	background-image: url(css/url);
-}
-
-
-.bro-logo:hover {
-	text-decoration: underline;
 }
 
 
@@ -82,10 +93,11 @@ body #nav ul {
 	top: 0;
 	left: 0%;
 	overflow: hidden;
-	background-color: #A7D2CB;
+	background-color: #0593ef;
 	background-repeat: no-repeat;
 	border-bottom: medium solid #000000;
 	display:block;
+	color: #ffffff;
 }
 
 
@@ -110,7 +122,6 @@ ul li a:hover {
 
 a:link {
 	text-decoration: none;
-	text-decoration: underline;
 	color: #000000;
 }
 
@@ -126,15 +137,7 @@ a:active {
 	color: #FFFFFF;
 }
 
-
 .container {
 	background-color: #FFFFFF;
-}
-
-
-.cacarousel-example-generic {
-	width: auto;
-	height: 300px;
-	max-height: 300px;
 }
 

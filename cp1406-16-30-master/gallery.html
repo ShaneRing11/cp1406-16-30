@@ -14,6 +14,24 @@
 		$('#carousel-example-generic').carousel();
 	</script>
 
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId      : 'your-app-id',
+                xfbml      : true,
+                version    : 'v2.6'
+            });
+        };
+
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_GB/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
 </head>
 
 
@@ -22,8 +40,8 @@
 	<ul>
      	
         <span class="bro-logo">
-        <a href="index.html"><strong>Barrier Reef Orchestra
-        </strong></a>
+        <strong>Barrier Reef Orchestra
+        </strong>
         </span>
                             
   				<li>
@@ -42,7 +60,7 @@
                 </li>
 
                 <li>
-                    <a href="news.html"><strong>ANNOUNCEMENTS
+                    <a href="news.html"><strong>NEWS
                     </strong></a>
                 </li>
 
@@ -52,12 +70,17 @@
                 </li>
 
                 <li>
-                    <a href="benefactors.html"><strong>BENEFACTORS
+                    <a href="benefactors.html"><strong>SPONSORS
                     </strong></a>
                 </li>
 
                 <li>
-                    <a href="gallery.html"><strong>GALLERY
+                    <strong>GALLERY
+                    </strong>
+                </li>
+
+                <li>
+                    <a href="index.html"><strong>HOME
                     </strong></a>
                 </li>
                           
@@ -73,12 +96,16 @@
 
 <div class="row">
     <div class="container">
+        <div class="col-sm-11 mobile_like">
+            <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fnqorchestra%2F&width=127&layout=standard&action=like&show_faces=false&share=true&height=46&appId" width="340" height="30" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        </div>
         <div class="col-md-3 sidebar">
-            <p>Our next concert is</p>
-            <p>Insert facebook feed here</p>
-            <p>One of us, one of us....</p>
+            <div class="col-sm-5 col-md-4 col-lg-3 sidebar">
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fnqorchestra%2F&tabs=timeline&width=280&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="280" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+            </div>
         </div>
         <div class="col-md-8 content">
+            <h1>Gallery</h1>
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
